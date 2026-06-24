@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Consumo de cable - Compras públicas Ecuador</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <img src="logo.png" class="logo">
+  <h1>Consumo de cable - Compras públicas Ecuador</h1>
+</div>
+
+<!-- KPIs -->
+<div class="kpis">
+  <div class="kpi">
+    <h3>Total Metros</h3>
+    <p id="totalKPI">0</p>
+  </div>
+
+  <div class="kpi">
+    <h3>Top Tecnología</h3>
+    <p id="topTecKPI">-</p>
+  </div>
+
+  <div class="kpi">
+    <h3># Empresas</h3>
+    <p id="empresasKPI">0</p>
+  </div>
+
+  <div class="kpi">
+    <h3>Top Nivel</h3>
+    <p id="topNivelKPI">-</p>
+  </div>
+</div>
+
+<!-- FILTROS -->
+<div class="filters">
+  <select id="empresaFilter"><option value="all">Empresa</option></select>
+  <select id="nivelFilter"><option value="all">Nivel</option></select>
+  <select id="materialFilter"><option value="all">Material</option></select>
+</div>
+
+<!-- GRÁFICOS -->
+<div class="charts">
+  <canvas id="techChart"></canvas>
+  <canvas id="materialChart"></canvas>
+  <canvas id="nivelChart"></canvas>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  Contacto: Andrés Cuadrado / Cablec - Prysmian Ecuador / 
+  Telf: 0998879869 / andres.cuadrado.ex@prysmian.com
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
