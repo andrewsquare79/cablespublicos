@@ -5,24 +5,24 @@ body {
   margin: 20px;
 }
 
+/* HEADER */
 .header {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
 .logo {
-  width: 150px;
-  margin-bottom: 10px;
+  width: 120px;
 }
 
-h1 {
-  margin-bottom: 20px;
-}
-
+/* KPIs */
 .kpis {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .kpi {
@@ -34,42 +34,46 @@ h1 {
 
 .kpi p {
   font-size: 22px;
-  font-weight: bold;
   color: #38bdf8;
 }
 
+/* FILTROS */
 .filters {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   margin-bottom: 20px;
 }
 
 select {
-  padding: 8px;
-  margin: 5px;
-  border-radius: 6px;
+  min-width: 150px;
+  height: 100px;
   background: #1e293b;
   color: white;
+  border-radius: 6px;
 }
 
-.charts {
+/* CHARTS */
+.charts-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
-#nivelChart {
+.chart-box {
+  background: #1e293b;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.chart-box.full {
   grid-column: span 2;
 }
 
+/* FOOTER */
 .footer {
   margin-top: 30px;
   text-align: center;
   font-size: 12px;
   color: #94a3b8;
-}
-
-/* hover efecto */
-canvas:hover {
-  transform: scale(1.02);
-  transition: 0.2s;
 }
